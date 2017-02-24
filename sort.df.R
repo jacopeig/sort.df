@@ -1,3 +1,5 @@
+#Create a new data frame sorted by a word
+
 sort.df<-function(df,word,columns){
 	if(class(df)!="data.frame") stop("No data frame as argument")
 	if(class(word)!="character") stop("No character as argument")
