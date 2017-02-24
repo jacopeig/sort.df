@@ -1,5 +1,4 @@
 #Create a new data frame sorted by a word
-#The word must be at the beggining of possition
 
 sort.df<-function(df,word,columns){
 	if(class(df)!="data.frame") stop("No data frame as argument")
