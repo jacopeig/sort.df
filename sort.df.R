@@ -40,4 +40,5 @@ sort.df<-function(df,word,columns){
 			}
 		}
 	}
+	return(df)
 }
