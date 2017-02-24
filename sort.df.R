@@ -1,9 +1,9 @@
 #Create a new data frame sorted by a word
 
 sort.df<-function(df,word,columns){
-	if(class(df)!="data.frame") stop("No data frame as argument")
-	if(class(word)!="character") stop("No character as argument")
-	if(class(columns)!="numeric") stop("Not valid number of columns")
+	if(!is.data.frame(df)) stop("No data frame as argument")
+	if(!is.character(word)) stop("No character as argument")
+	if(!is.numeric(columns)) stop("Not valid number of columns")
 	if(max(columns)>ncol(df) | min(columns)<0) stop("out of range")	
 
 
