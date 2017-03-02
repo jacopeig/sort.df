@@ -1,5 +1,7 @@
-#Create a new data frame sorted by a word
-
+###########################################
+# Create a new data frame sorted by a word
+###########################################
+#' @author Jacobo Perez Iglesias (\email{jacopeig@gmail.com}).
 sort.df<-function(df,word,columns){
 	if(!is.data.frame(df)) stop("No data frame as argument")
 	if(!is.character(word)) stop("No character as argument")
